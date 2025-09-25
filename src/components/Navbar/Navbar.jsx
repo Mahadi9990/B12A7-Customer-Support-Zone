@@ -4,7 +4,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm max-w-[1300px] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -48,7 +48,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">CS — Ticket System</a>
+          <a className="text-2xl font-bold">CS — Ticket System</a>
         </div>
 
         <div className="navbar-end">
@@ -76,6 +76,7 @@ export default function Navbar() {
           </div>
           <a className="btn btn-primary"><FontAwesomeIcon icon={faPlus} size="1x" className="text-white" />New Ticket</a>
         </div>
+        
       </div>
     </>
   );
