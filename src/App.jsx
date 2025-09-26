@@ -32,12 +32,14 @@ function App() {
           </div>
         }
       >
-        <Main
+        
+          <Main
           fetchData={fetchData}
           progress={progress}
           setprogress={setprogress}
           resolveCount={resolveCount}
           setresolveCount={setresolveCount}
+          
         />
       </Suspense>
       <Footer/>

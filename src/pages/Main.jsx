@@ -12,7 +12,7 @@ export default function Main({
   const toatalCard = use(fetchData);
   const [allCard, setallCard] = useState(toatalCard);
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-start max-w-[1300px] mx-auto mt-5">
+    <div className="my-5 flex flex-col lg:flex-row justify-between items-start max-w-[1300px] min-h-screen mx-auto mt-5">
       <div className="w-full lg:w-[70%] ">
         <AllCard
           allCard={allCard}

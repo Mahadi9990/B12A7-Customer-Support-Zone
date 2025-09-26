@@ -29,7 +29,7 @@ export default function Task({
   return (
     <>
       <div className="">
-        <h1 className="font-bold text-3xl text-start py-5">Task Status</h1>
+        <h1 className="font-bold text-3xl text-center lg:text-start py-5">Task Status</h1>
         <div className="flex flex-col justify-start items-start">
           {progress && progress.length > 0 ? (
             progress.map((item) => (
@@ -54,7 +54,7 @@ export default function Task({
         </div>
       </div>
       <div className="">
-        <h1 className="font-bold text-3xl text-start py-5">Resolved Status</h1>
+        <h1 className="font-bold text-3xl text-center lg:text-start py-5">Resolved Status</h1>
         <div className="flex flex-col justify-start items-start">
           {resloveArray && resloveArray.length > 0 ? (
             resloveArray.map((item) => (
