@@ -1,9 +1,7 @@
-import React, { use } from "react";
 import Card from "../Card/Card";
 
-export default function AllCard({ fetchData,setprogress,progress }) {
-  const allCard = use(fetchData);
- 
+export default function AllCard({ allCard,setprogress,progress }) {
+
   return (
 
       <div className="w-full lg:w-[70%]">
