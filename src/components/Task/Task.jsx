@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
@@ -28,7 +27,7 @@ export default function Task({
   };
 
   return (
-    <div className="w-full lg:w-[28%] rounded-xl shadow-2xl p-5 mx-auto">
+    <>
       <div className="">
         <h1 className="font-bold text-3xl text-start py-5">Task Status</h1>
         <div className="flex flex-col justify-start items-start">
@@ -74,11 +73,11 @@ export default function Task({
             ))
           ) : (
             <div className="w-full mx-auto">
-              <p className="text-center text-xl">No task is Resolved</p>
+              <p className="text-center text-xl">No resolved tasks yet.</p>
             </div>
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 }

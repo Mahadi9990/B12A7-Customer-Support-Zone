@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Main from "./pages/Main";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import Footer from "./components/Footer/Footer";
 
 const fetchFunction = async () => {
   const res = await fetch("/card.json");
@@ -39,6 +40,7 @@ function App() {
           setresolveCount={setresolveCount}
         />
       </Suspense>
+      <Footer/>
     </>
   );
 }

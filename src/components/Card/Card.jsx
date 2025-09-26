@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 export default function Card({ cardItem,setprogress,progress }) {
   const handleClick = (item) => {
     setprogress([...progress,item])
-      toast.success("In-Progress");
+      toast.success("completed");
   };
   return (
     <div
