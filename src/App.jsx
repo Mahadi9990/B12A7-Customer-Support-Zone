@@ -22,7 +22,7 @@ function App() {
       <Banner progress={progress} resolveCount={resolveCount} />
       <Suspense
         fallback={
-          <div>
+          <div className="max-w-[1300px] mx-auto text-center p-5">
             <span className="loading loading-spinner loading-xs"></span>
             <span className="loading loading-spinner loading-sm"></span>
             <span className="loading loading-spinner loading-md"></span>

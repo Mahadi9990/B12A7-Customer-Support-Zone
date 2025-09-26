@@ -18,7 +18,6 @@ export default function Task({
     setallCard(total);
     setresolveCount(resolveCount + 1);
     toast.success("Resolved Task");
-    // console.log(setresloveArray)
     setresloveArray([...resloveArray,item])
   };
   const handleResolveArray = (item) => {
@@ -26,7 +25,6 @@ export default function Task({
     setresloveArray(resolve);
     setresolveCount(resolveCount - 1);
     toast.error("Resolved Task Deleted");
-    // console.log(setresloveArray)
   };
 
   return (
@@ -63,7 +61,7 @@ export default function Task({
             resloveArray.map((item) => (
               <div key={item.id} className="my-3 w-full">
                 <h1 className="py-3">{item.title}</h1>
-                <div className="flex flex-col justify-between items-center">
+                <div className="flex flex-row justify-between items-center">
                   <h1>Completed</h1>
                   <button
                   onClick={() => handleResolveArray(item)}
@@ -75,7 +73,9 @@ export default function Task({
               </div>
             ))
           ) : (
-            ""
+            <div className="w-full mx-auto">
+              <p className="text-center text-xl">No task is Resolved</p>
+            </div>
           )}
         </div>
       </div>
