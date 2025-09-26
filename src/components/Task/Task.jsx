@@ -1,10 +1,12 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 export default function Task({ progress ,setprogress ,resolveCount,setresolveCount }) {
     const handleResolve =(item)=>{
         const resolve = progress.filter((allitme)=> allitme.id !== item.id)
         setprogress(resolve)
         setresolveCount(resolveCount + 1)
+        toast.success("Resolved Task")
     }
   return (
     <div className="w-full lg:w-[28%]">
