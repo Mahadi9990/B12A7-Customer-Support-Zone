@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function Task({
+  open,
   progress,
   setprogress,
   resolveCount,
@@ -55,7 +56,8 @@ export default function Task({
           )}
         </div>
       </div>
-      <div className="">
+      {
+        open ?<div className="">
         <h1 className="font-bold text-3xl text-center lg:text-start py-5">Resolved Status</h1>
         <div className="flex flex-col justify-start items-start">
           {resloveArray && resloveArray.length > 0 ? (
@@ -79,7 +81,8 @@ export default function Task({
             </div>
           )}
         </div>
-      </div>
+      </div> :""
+      }
     </>
   );
 }

@@ -2,10 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDot } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
 
-export default function Card({ cardItem,setprogress,progress }) {
+export default function Card({setopen, cardItem,setprogress,progress }) {
   const handleClick = (item) => {
     setprogress([...progress,item])
       toast.success("completed");
+      setopen(true)
   };
   return (
     <div
