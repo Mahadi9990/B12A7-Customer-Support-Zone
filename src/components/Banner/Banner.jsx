@@ -11,21 +11,21 @@ export default function Banner({ progress, resolveCount }) {
             <p className="text-6xl font-bold">{progress.length}</p>
           </div>
           <div className=" h-full">
-            <img src="/public/123.png" alt="" className="h-full rotate-y-180" />
+            <img src="/123.png" alt="" className="h-full rotate-y-180" />
           </div>
         </div>
       </div>
       <div className={`bg-gradient-to-r from-[#54CF68] to-[#00827A] h-72 w-full rounded-2xl flex flex-col text-white justify-center items-center`} >
         <div className="w-full h-full text-center flex justify-evenly items-center">
           <div className=" h-full">
-            <img className="h-full" src="/public/123.png" alt="" />
+            <img className="h-full" src="/123.png" alt="" />
           </div>
           <div className="">
             <h1 className="text-xl text-nowrap">Resolved</h1>
             <p className="text-6xl font-bold">{resolveCount}</p>
           </div>
           <div className=" h-full">
-            <img src="/public/123.png" alt="" className="h-full rotate-y-180" />
+            <img src="/123.png" alt="" className="h-full rotate-y-180" />
           </div>
         </div>
       </div>
