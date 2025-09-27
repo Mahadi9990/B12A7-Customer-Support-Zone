@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function Task({
   progress,
@@ -37,7 +39,7 @@ export default function Task({
                 <h1 className="py-3">{item.title}</h1>
                 <button
                   onClick={() => handleResolve(item)}
-                  className="btn btn-success w-full"
+                  className="btn btn-success w-full text-white"
                 >
                   Complete
                 </button>
@@ -61,10 +63,10 @@ export default function Task({
               <div key={item.id} className="my-3 w-full">
                 <h1 className="py-3">{item.title}</h1>
                 <div className="flex flex-row justify-between items-center">
-                  <h1>Completed</h1>
+                  <h1 className="text-green-400"><FontAwesomeIcon className="text-green-400" icon={faCheck} /> Completed</h1>
                   <button
                   onClick={() => handleResolveArray(item)}
-                  className="btn btn-success"
+                  className="btn btn-success text-white"
                 >
                   Click to Delete
                 </button>
