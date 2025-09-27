@@ -4,7 +4,7 @@ export default function Banner({ progress, resolveCount }) {
       <div className={`bg-gradient-to-r from-[#632EE3] to-[#9F62F2] h-72 w-full rounded-2xl  text-white`}>
         <div className="w-full h-full text-center flex justify-evenly items-center">
           <div className=" h-full">
-            <img className="h-full" src="/public/123.png" alt="" />
+            <img className="h-full" src="/123.png" alt="" />
           </div>
           <div className="">
             <h1 className="text-xl text-nowrap">In-Progress</h1>
